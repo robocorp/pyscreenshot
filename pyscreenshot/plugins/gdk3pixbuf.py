@@ -4,8 +4,6 @@
 Adapted from https://stackoverflow.com/a/37768950/81636, but uses
 buffers directly instead of saving intermediate files (which is slow).
 """
-import sys
-
 from PIL import Image
 from pyscreenshot.plugins.backend import CBackend
 from pyscreenshot.util import platform_is_osx
