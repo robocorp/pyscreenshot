@@ -8,19 +8,19 @@ if os.environ.get("distutils_issue8876_workaround_enabled", False):
     #             VirtualBox VMs shared filesystems don't support hardlinks.
     del os.link
 
-NAME = "pyscreenshot"
+NAME = "rpaframework-screenshot"
 URL = "https://github.com/robocorp/rpaframework-screenshot"
-DESCRIPTION = "python screenshot"
+DESCRIPTION = "rpaframework screenshot"
 PACKAGES = [
-    NAME,
-    NAME + ".cli",
-    NAME + ".plugins",
-    NAME + ".examples",
+    "pyscreenshot",
+    "pyscreenshot.cli",
+    "pyscreenshot.plugins",
+    "pyscreenshot.examples",
 ]
 
 # get __version__
 __version__ = None
-exec(open(os.path.join(NAME, "about.py")).read())
+exec(open(os.path.join("pyscreenshot", "about.py")).read())
 VERSION = __version__
 
 # extra = {}
