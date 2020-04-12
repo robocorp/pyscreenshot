@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rpaframework-screenshot"
-version = "0.2.0"
+version = "0.3.0"
 description = "Fork of pyscreenshot for RPA use"
 authors = [
 	"RPA Framework <rpafw@robocorp.com>",
