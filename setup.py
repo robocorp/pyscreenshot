@@ -9,13 +9,12 @@ if os.environ.get("distutils_issue8876_workaround_enabled", False):
     del os.link
 
 NAME = "pyscreenshot"
-URL = "https://github.com/ponty/pyscreenshot"
+URL = "https://github.com/robocorp/rpaframework-screenshot"
 DESCRIPTION = "python screenshot"
 PACKAGES = [
     NAME,
-    NAME + ".plugins",
-    NAME + ".check",
     NAME + ".cli",
+    NAME + ".plugins",
     NAME + ".examples",
 ]
 
@@ -46,7 +45,6 @@ classifiers = [
 
 install_requires = [
     "EasyProcess",
-    "entrypoint2",
     "mss ; python_version > '3.4'",
     "jeepney ; python_version > '3.4' and platform_system == 'Linux'",
 ]
@@ -58,7 +56,7 @@ setup(
     long_description=open("README.rst", "r").read(),
     python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
     classifiers=classifiers,
-    keywords="screenshot",
+    keywords="rpaframework-screenshot",
     author="ponty",
     # author_email='',
     url=URL,
